@@ -23,7 +23,8 @@ def menu1():
     while opcao != "5":
         os.system('cls')
         print("É um prazer " + nome, "vamos continuar com o seu atendimento!")
-        print("1. Escolha seu Sanduiche. \n2. Escolha sua Bebida. \n3. Qual a Forma de Pagamento? \n4. Finalizar Pedido. \n5. Sair.")
+        listar(("Escolha seu Sanduíche.", "Escolha sua Bebida", "Qual a Forma de Pagamento?", "Finalizar Pedido", "Sair"))
+        #print("1. Escolha seu Sanduiche. \n2. Escolha sua Bebida. \n3. Qual a Forma de Pagamento? \n4. Finalizar Pedido. \n5. Sair.")
         opcao = input("Qual opção deseja? ")
 
         if opcao == "5":
