@@ -5,9 +5,16 @@ from listar import listar
 
 # Lista para armazenar as informacoes do usuario e pedido
 informacoes_pessoais = []
-informacoes_pedido = []
+informacoes_pedido = {
+    "Sanduiche": None,
+    "Bebida": None,
+}
 info_endereco = []
 info_pagamento = []
+
+sanduiches=("Sanduiche de Carne Assada", "Sanduiche de Pernil", "Sanduiche de Rosbife")
+bebidas=("Suco de limão", "Suco de limão com morango", "Coca cola")
+pagamentos=("Débito", "Crédito", "Pix", "Dinheiro")
 
 # Apresentação do nosso Bot
 def apresentacao():
@@ -23,7 +30,7 @@ def menu1():
     while opcao != "5":
         os.system('cls')
         print("É um prazer " + nome, "vamos continuar com o seu atendimento!")
-        listar(("Escolha seu Sanduíche.", "Escolha sua Bebida", "Qual a Forma de Pagamento?", "Finalizar Pedido", "Sair"))
+        listar(("Escolha seu Sanduíche.", "Escolha sua Bebida.", "Qual a Forma de Pagamento?", "Finalizar Pedido.", "Sair."))
         #print("1. Escolha seu Sanduiche. \n2. Escolha sua Bebida. \n3. Qual a Forma de Pagamento? \n4. Finalizar Pedido. \n5. Sair.")
         opcao = input("Qual opção deseja? ")
 
@@ -46,22 +53,24 @@ def menu1():
             
         elif opcao == "3":
             os.system('cls')
-            print(f"1. Débito. \n2. Crédito. \n3. Pix. \n4. Dinheiro.")
+            #print(f"1. Débito. \n2. Crédito. \n3. Pix. \n4. Dinheiro.")
+            listar(pagamentos)
             pagamento = input("Qual opção deseja? ")
             info_pagamento.append(pagamento)
             return menu1()
 
         elif opcao == "2":
             os.system('cls')
-            print("1. Suco de limão. \n2. Suco de limão com morango. \n3. Coca cola")
+            #print("1. Suco de limão. \n2. Suco de limão com morango. \n3. Coca cola")
+            listar(bebidas)
             bebida = input("Qual opção deseja? ")
-            informacoes_pedido.append(bebida)
+            informacoes_pedido["bebida"]=bebida
             return menu1()
         elif opcao == "1":
             os.system('cls')
-            print("1. Sanduiche de Carne Assada. \n2. Sanduiche de Pernil. \n3. Sanduiche de Rosbife.")
+            print(sanduiches)
             sanduiche = input("Qual opção deseja? ")
-            informacoes_pedido.append(sanduiche)
+            informacoes_pedido["Sanduiche"] = sanduiche
             return menu1()
 
         else:
