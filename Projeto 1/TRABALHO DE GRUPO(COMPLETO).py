@@ -6,7 +6,7 @@ import time
 info_pessoais = []
 info_pedido = {
     "sanduiche": [],
-    "Bebida": []
+    "bebida": []
 }
 info_endereco = []
 info_pagamento = []
@@ -16,9 +16,9 @@ bebidas=("Suco de limão", "Suco de limão com morango", "Coca cola")
 pagamentos=("Débito", "Crédito", "Pix", "Dinheiro")
 
 info_predefinidas = {
-    'sanduiches': sanduiches,
-    'bebidas': bebidas,
-    'pagamentos': pagamentos,
+    'sanduiche': sanduiches,
+    'bebida': bebidas,
+    'pagamento': pagamentos,
 }
 
 def listar( arg:tuple|list ):
