@@ -79,8 +79,8 @@ nosso codigo e tambem para ser facil de ser lido.'''
 
 
 def endereco(sanduiche, bebida, pagamento):
-    '''Trazemos as variaveis 'sanduiche', 'bebida' e pagamento para encaminhar para o fechamento
-    junto com as novas variaveis, 'endereco1', 'bairro' e referencia para então apresentarmos 
+    '''Trazemos as variaveis 'sanduiche', 'bebida' e 'pagamento' para encaminhar para o fechamento
+    junto com as novas variaveis, 'endereco1', 'bairro' e 'referencia' para então apresentarmos 
     na funcao fechamento'''
     print("Agora precisamos saber o seu endereço.")
     endereco1 = input("Qual o seu endereço? ")
