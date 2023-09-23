@@ -119,7 +119,7 @@ def fechamento():
     print(f"Endereço: {info_endereco[0]}\nBairro: {info_endereco[1]}\nReferencia: {info_endereco[2]}")
     print(info_pagamento)
     
-    for nome, itens in info_pedido:
+    for nome, itens in info_pedido.items():
         print(f"{nome}:")
         for n in itens:
             print(f"    {n}")
