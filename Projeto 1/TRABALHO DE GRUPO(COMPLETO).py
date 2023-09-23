@@ -27,7 +27,7 @@ def listar( arg:tuple|list ):
         print( '%2d-%s' % (index+1,arg[index]) )
 
 def adicionarAoPedido(tipo:str, valor):
-    info_pedido[tipo].append( info_predefinidas[tipo] )
+    info_pedido[tipo].append( info_predefinidas[tipo][valor] )
 
 # Apresentação do nosso Bot
 def apresentacao():
