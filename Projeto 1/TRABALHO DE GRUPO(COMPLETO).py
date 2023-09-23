@@ -1,13 +1,12 @@
 # Importando bibliotecas
 import os
 import time
-from listar import listar
 
 # Lista para armazenar as informacoes do usuario e pedido
-informacoes_pessoais = []
-informacoes_pedido = {
-    "Sanduiche": None,
-    "Bebida": None,
+info_pessoais = []
+info_pedido = {
+    "sanduiche": [],
+    "Bebida": []
 }
 info_endereco = []
 info_pagamento = []
@@ -15,6 +14,15 @@ info_pagamento = []
 sanduiches=("Sanduiche de Carne Assada", "Sanduiche de Pernil", "Sanduiche de Rosbife")
 bebidas=("Suco de limão", "Suco de limão com morango", "Coca cola")
 pagamentos=("Débito", "Crédito", "Pix", "Dinheiro")
+
+info_predefinidas = {
+    'sanduiches': sanduiches,
+    'bebidas': bebidas,
+    'pagamentos': pagamentos,
+}
+
+def adicionarAoPedido(tipo:str, valor):
+    info_pedido[tipo].append(valor)
 
 # Apresentação do nosso Bot
 def apresentacao():
@@ -63,14 +71,14 @@ def menu1():
             os.system('cls')
             #print("1. Suco de limão. \n2. Suco de limão com morango. \n3. Coca cola")
             listar(bebidas)
-            bebida = input("Qual opção deseja? ")
-            informacoes_pedido["bebida"]=bebida
+            bebida = int(input("Qual opção deseja? "))-1
+            info_pedido["bebida"].append(bebidas[bebida])
             return menu1()
         elif opcao == "1":
             os.system('cls')
             print(sanduiches)
-            sanduiche = input("Qual opção deseja? ")
-            informacoes_pedido["Sanduiche"] = sanduiche
+            sanduiche = int(input("Qual opção deseja? "))-1
+            info_pedido["sanduiche"].append(sanduiches[sanduiche])
             return menu1()
 
         else:
