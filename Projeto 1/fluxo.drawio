@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-23T18:53:26.125Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="1e6POIMvUi-tz59VhLv1" version="21.8.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-23T19:05:43.849Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="H-peByDkHMBVOGxW_WHF" version="21.8.1" type="github">
   <diagram name="Página-1" id="Ty_5jwe1dmtdeJB90TqP">
-    <mxGraphModel dx="828" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1006" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -188,9 +188,9 @@
             <mxPoint x="1580" y="760" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NueicxOGYSRS9VP726fo-37" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;SIM&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NueicxOGYSRS9VP726fo-36">
+        <mxCell id="NueicxOGYSRS9VP726fo-37" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span&gt;SIM&lt;/span&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=0" vertex="1" connectable="0" parent="NueicxOGYSRS9VP726fo-36">
           <mxGeometry x="-0.2421" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="NueicxOGYSRS9VP726fo-38" value="if opção == &quot;3&quot;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B266FF;strokeColor=#000000;" vertex="1" parent="1">
@@ -227,8 +227,99 @@
         <mxCell id="NueicxOGYSRS9VP726fo-47" value="&lt;font style=&quot;font-weight: bold;&quot; color=&quot;#0000ff&quot;&gt;pagamento &lt;/font&gt;= input(&lt;br&gt;&quot;Qual opção deseja?&quot;&lt;br&gt;)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="1500" y="1000" width="160" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NueicxOGYSRS9VP726fo-48" target="NueicxOGYSRS9VP726fo-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-79" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SIM&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NueicxOGYSRS9VP726fo-51">
+          <mxGeometry x="0.0631" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NueicxOGYSRS9VP726fo-48" target="NueicxOGYSRS9VP726fo-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="NueicxOGYSRS9VP726fo-48" value="if&amp;nbsp;&lt;font style=&quot;font-weight: bold;&quot; color=&quot;#0000ff&quot;&gt;pagamento &lt;/font&gt;== &quot;1&quot;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B266FF;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="1520" y="1120" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-50" value="&lt;font style=&quot;border-color: var(--border-color); font-weight: bold;&quot; color=&quot;#0000ff&quot;&gt;pagamento&amp;nbsp;&lt;/font&gt;= &quot;Débito&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1140" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-53" value="if&amp;nbsp;&lt;font style=&quot;font-weight: bold;&quot; color=&quot;#0000ff&quot;&gt;pagamento &lt;/font&gt;== &quot;2&quot;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B266FF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="1280" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="NueicxOGYSRS9VP726fo-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1640" y="1342" as="sourcePoint" />
+            <mxPoint x="1720" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-81" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SIM&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NueicxOGYSRS9VP726fo-56">
+          <mxGeometry x="-0.0087" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" target="NueicxOGYSRS9VP726fo-59" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1580" y="1400" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-59" value="if&amp;nbsp;&lt;font style=&quot;font-weight: bold;&quot; color=&quot;#0000ff&quot;&gt;pagamento &lt;/font&gt;== &quot;3&quot;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B266FF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="1440" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="NueicxOGYSRS9VP726fo-59" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1640" y="1502" as="sourcePoint" />
+            <mxPoint x="1720" y="1500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" target="NueicxOGYSRS9VP726fo-66" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1580" y="1560" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-93" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NueicxOGYSRS9VP726fo-66" target="NueicxOGYSRS9VP726fo-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-66" value="if&amp;nbsp;&lt;font style=&quot;font-weight: bold;&quot; color=&quot;#0000ff&quot;&gt;pagamento &lt;/font&gt;== &quot;4&quot;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B266FF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="1600" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="NueicxOGYSRS9VP726fo-66" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1640" y="1662" as="sourcePoint" />
+            <mxPoint x="1720" y="1660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-69" value="&lt;font style=&quot;border-color: var(--border-color); font-weight: bold;&quot; color=&quot;#0000ff&quot;&gt;pagamento&amp;nbsp;&lt;/font&gt;= &quot;Crédito&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1300" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-70" value="&lt;font style=&quot;border-color: var(--border-color); font-weight: bold;&quot; color=&quot;#0000ff&quot;&gt;pagamento&amp;nbsp;&lt;/font&gt;= &quot;Pix&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1460" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-71" value="&lt;font style=&quot;border-color: var(--border-color); font-weight: bold;&quot; color=&quot;#0000ff&quot;&gt;pagamento&amp;nbsp;&lt;/font&gt;= &quot;Dinheiro&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1620" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-84" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SIM&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1679.997037037037" y="1499.9999828690893" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-86" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SIM&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1679.997037037037" y="1659.9999828690893" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-88" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;NÃO&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1580.0015789473682" y="1260.0000000000005" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-89" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;NÃO&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1500.0015789473682" y="1300.0000000000005" as="geometry">
+            <mxPoint x="78" y="118" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-90" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;NÃO&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1580.0015789473682" y="1580.0000000000005" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-91" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;NÃO&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1580.0015789473682" y="1740.0000000000005" as="geometry" />
+        </mxCell>
+        <mxCell id="NueicxOGYSRS9VP726fo-92" value="print(&quot;&lt;br&gt;Opção inválida, digite corretamente&quot;)" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="1760" width="160" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
