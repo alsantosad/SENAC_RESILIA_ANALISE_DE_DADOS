@@ -77,18 +77,19 @@ def menu1():
             #print("1. Suco de limão. \n2. Suco de limão com morango. \n3. Coca cola")
             listar(bebidas)
             bebida = int(input("Qual opção deseja? "))-1
-            info_pedido["bebida"].append(bebidas[bebida])
+            adicionarAoPedido('bebida', bebida)
             return menu1()
 
         elif opcao == "1":
             os.system('cls')
             listar(sanduiches)
             sanduiche = int(input("Qual opção deseja? "))-1
-            info_pedido["sanduiche"].append(sanduiches[sanduiche])
+            #info_pedido["sanduiche"].append(sanduiches[sanduiche])
+            adicionarAoPedido('sanduiche', sanduiche)
             return menu1()
 
         else:
-            print("Opção inválida, selecione as opções.")
+            print("Opção inválida, selecione uma das opções.")
             return menu1()
 
 # Coletando Informações sobre o Endereço
