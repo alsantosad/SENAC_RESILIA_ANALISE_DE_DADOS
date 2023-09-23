@@ -23,11 +23,11 @@ info_predefinidas = {
 
 def listar( arg:tuple|list ):
     "informe uma lista ou tupla contendo apenas strings e a função exibirá os elementos enumerados"
-    for index in range(len(arg)):
-        print('%2d-%s'%(index+1,arg[index]))
+    for index in range( len(arg) ):
+        print( '%2d-%s' % (index+1,arg[index]) )
 
 def adicionarAoPedido(tipo:str, valor):
-    info_pedido[tipo].append(valor)
+    info_pedido[tipo].append( info_predefinidas[tipo] )
 
 # Apresentação do nosso Bot
 def apresentacao():
@@ -68,7 +68,7 @@ def menu1():
             os.system('cls')
             #print(f"1. Débito. \n2. Crédito. \n3. Pix. \n4. Dinheiro.")
             listar(pagamentos)
-            pagamento = input("Qual opção deseja? ")
+            pagamento = int(input("Qual opção deseja? "))-1
             info_pagamento.append(pagamento)
             return menu1()
 
@@ -79,9 +79,10 @@ def menu1():
             bebida = int(input("Qual opção deseja? "))-1
             info_pedido["bebida"].append(bebidas[bebida])
             return menu1()
+
         elif opcao == "1":
             os.system('cls')
-            print(sanduiches)
+            listar(sanduiches)
             sanduiche = int(input("Qual opção deseja? "))-1
             info_pedido["sanduiche"].append(sanduiches[sanduiche])
             return menu1()
