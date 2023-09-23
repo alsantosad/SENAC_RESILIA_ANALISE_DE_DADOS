@@ -115,11 +115,11 @@ def endereco():
 
 # Fechamento do pedido com as informações Gerais
 def fechamento():
-    print(f"Nome: {informacoes_pessoais}\n")
+    print(f"Nome: {info_pessoais}\n")
     print(f"Endereço: {info_endereco[0]}\nBairro: {info_endereco[1]}\nReferencia: {info_endereco[2]}")
     print(info_pagamento)
     
-    for i in informacoes_pedido:
+    for i in info_pedido:
         print(f"Item: {i}")
     
     input("Correto?")
@@ -130,5 +130,5 @@ def fechamento():
 # Inicio
 apresentacao()
 nome = input("Seja bem vindo! Qual o seu nome? ")
-informacoes_pessoais.append(nome)
+info_pessoais.append(nome)
 menu1()
