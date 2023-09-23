@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-23T17:58:50.678Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="QPDj3E3ADZy2igQBtIXP" version="21.8.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-23T18:09:03.062Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="pB8dkxZopUD7LGXkfqTx" version="21.8.1" type="github">
   <diagram name="Página-1" id="Ty_5jwe1dmtdeJB90TqP">
-    <mxGraphModel dx="1006" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1083" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -38,7 +38,7 @@
         <mxCell id="QidJTkGzFkj9kZsT0gb2-13" value="&lt;div&gt;apresentacao&lt;/div&gt;&lt;div&gt;Terminar&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#99CCFF;" parent="1" vertex="1">
           <mxGeometry x="760" y="40" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="QidJTkGzFkj9kZsT0gb2-16" value="&lt;div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas&quot;&gt;----------------------------------------&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas&quot;&gt;~~~~~~~~ BEM VINDO AO SANDUREI ~~~~~~~~&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas&quot;&gt;&amp;nbsp;~~~&amp;nbsp; O MELHOR SANDUÍCHE DA CIDADE&amp;nbsp; ~~~&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas&quot;&gt;----------------------------------------&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;" parent="1" vertex="1">
+        <mxCell id="QidJTkGzFkj9kZsT0gb2-16" value="&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas&quot;&gt;Saída&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas&quot;&gt;----------------------------------------&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas&quot;&gt;~~~~~~~~ BEM VINDO AO SANDUREI ~~~~~~~~&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas&quot;&gt;&amp;nbsp;~~~&amp;nbsp; O MELHOR SANDUÍCHE DA CIDADE&amp;nbsp; ~~~&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Consolas&quot;&gt;----------------------------------------&lt;/font&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;fillColor=#FF6666;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="400" y="40" width="320" height="80" as="geometry" />
         </mxCell>
         <mxCell id="QidJTkGzFkj9kZsT0gb2-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="QidJTkGzFkj9kZsT0gb2-13" edge="1">
@@ -95,8 +95,8 @@
         <mxCell id="QidJTkGzFkj9kZsT0gb2-38" value="limpar tela do terminal" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="720" y="200" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="QidJTkGzFkj9kZsT0gb2-40" value="&lt;div&gt;saída:&lt;/div&gt;&lt;div&gt;&quot;É um prazer &quot; + nome + &quot; vamos continuar com o seu atendimento!&quot;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="880" y="200" width="360" height="80" as="geometry" />
+        <mxCell id="QidJTkGzFkj9kZsT0gb2-40" value="&lt;div&gt;Saída&lt;/div&gt;&lt;div&gt;&quot;É um prazer &quot; + &lt;font color=&quot;#000099&quot;&gt;&lt;b&gt;nome&lt;/b&gt;&lt;/font&gt; + &quot; vamos continuar com o seu atendimento!&quot;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;fillColor=#FF6666;strokeColor=#36393d;" parent="1" vertex="1">
+          <mxGeometry x="881" y="200" width="360" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
