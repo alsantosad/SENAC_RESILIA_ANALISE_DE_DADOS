@@ -1,6 +1,0 @@
-Gerenciadores de tarefas
-
-notion
-github projects
-kanban
-trello
