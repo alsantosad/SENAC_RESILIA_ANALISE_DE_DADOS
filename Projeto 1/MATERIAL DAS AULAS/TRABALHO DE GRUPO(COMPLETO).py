@@ -1,13 +1,33 @@
 # Importando bibliotecas
 import os
 import time
-from listar import listar
 
 # Lista para armazenar as informacoes do usuario e pedido
-informacoes_pessoais = []
-informacoes_pedido = []
+info_pessoais = []
+info_pedido = {
+    "sanduiche": [],
+    "bebida": []
+}
 info_endereco = []
 info_pagamento = []
+
+sanduiches=("Sanduiche de Carne Assada", "Sanduiche de Pernil", "Sanduiche de Rosbife")
+bebidas=("Suco de limão", "Suco de limão com morango", "Coca cola")
+pagamentos=("Débito", "Crédito", "Pix", "Dinheiro")
+
+info_predefinidas = {
+    'sanduiche': sanduiches,
+    'bebida': bebidas,
+    'pagamento': pagamentos,
+}
+
+def listar( arg:tuple|list ):
+    "informe uma lista ou tupla contendo apenas strings e a função exibirá os elementos enumerados"
+    for index in range( len(arg) ):
+        print( '%2d-%s' % (index+1,arg[index]) )
+
+def adicionarAoPedido(tipo:str, valor):
+    info_pedido[tipo].append( info_predefinidas[tipo][valor] )
 
 # Apresentação do nosso Bot
 def apresentacao():
@@ -23,7 +43,8 @@ def menu1():
     while opcao != "5":
         os.system('cls')
         print("É um prazer " + nome, "vamos continuar com o seu atendimento!")
-        print("1. Escolha seu Sanduiche. \n2. Escolha sua Bebida. \n3. Qual a Forma de Pagamento? \n4. Finalizar Pedido. \n5. Sair.")
+        listar(("Escolha seu Sanduíche.", "Escolha sua Bebida.", "Qual a Forma de Pagamento?", "Finalizar Pedido.", "Sair."))
+        #print("1. Escolha seu Sanduiche. \n2. Escolha sua Bebida. \n3. Qual a Forma de Pagamento? \n4. Finalizar Pedido. \n5. Sair.")
         opcao = input("Qual opção deseja? ")
 
         if opcao == "5":
@@ -45,26 +66,30 @@ def menu1():
             
         elif opcao == "3":
             os.system('cls')
-            print(f"1. Débito. \n2. Crédito. \n3. Pix. \n4. Dinheiro.")
-            pagamento = input("Qual opção deseja? ")
+            #print(f"1. Débito. \n2. Crédito. \n3. Pix. \n4. Dinheiro.")
+            listar(pagamentos)
+            pagamento = int(input("Qual opção deseja? "))-1
             info_pagamento.append(pagamento)
             return menu1()
 
         elif opcao == "2":
             os.system('cls')
-            print("1. Suco de limão. \n2. Suco de limão com morango. \n3. Coca cola")
-            bebida = input("Qual opção deseja? ")
-            informacoes_pedido.append(bebida)
+            #print("1. Suco de limão. \n2. Suco de limão com morango. \n3. Coca cola")
+            listar(bebidas)
+            bebida = int(input("Qual opção deseja? "))-1
+            adicionarAoPedido('bebida', bebida)
             return menu1()
+
         elif opcao == "1":
             os.system('cls')
-            print("1. Sanduiche de Carne Assada. \n2. Sanduiche de Pernil. \n3. Sanduiche de Rosbife.")
-            sanduiche = input("Qual opção deseja? ")
-            informacoes_pedido.append(sanduiche)
+            listar(sanduiches)
+            sanduiche = int(input("Qual opção deseja? "))-1
+            #info_pedido["sanduiche"].append(sanduiches[sanduiche])
+            adicionarAoPedido('sanduiche', sanduiche)
             return menu1()
 
         else:
-            print("Opção inválida, selecione as opções.")
+            print("Opção inválida, selecione uma das opções.")
             return menu1()
 
 # Coletando Informações sobre o Endereço
@@ -90,12 +115,14 @@ def endereco():
 
 # Fechamento do pedido com as informações Gerais
 def fechamento():
-    print(f"Nome: {informacoes_pessoais}\n")
+    print(f"Nome: {info_pessoais}\n")
     print(f"Endereço: {info_endereco[0]}\nBairro: {info_endereco[1]}\nReferencia: {info_endereco[2]}")
     print(info_pagamento)
     
-    for i in informacoes_pedido:
-        print(f"Item: {i}")
+    for nome, itens in info_pedido.items():
+        print(f"{nome}:")
+        for n in itens:
+            print(f"    {n}")
     
     input("Correto?")
 
@@ -105,5 +132,5 @@ def fechamento():
 # Inicio
 apresentacao()
 nome = input("Seja bem vindo! Qual o seu nome? ")
-informacoes_pessoais.append(nome)
+info_pessoais.append(nome)
 menu1()
