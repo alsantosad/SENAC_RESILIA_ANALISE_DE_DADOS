@@ -44,8 +44,7 @@ soma = x + y
 print("multiplicação")
 soma_multipl = soma * z
 
-# Imprimindo o resultado final
+'''# Imprimindo o resultado final
 print("Resultado da equação:", resultado_final)
-resultado_final = soma_multipl / 100
-
+resultado_final = soma_multipl / 100'''
 
