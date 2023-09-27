@@ -28,9 +28,6 @@ Este é um projeto de um chat bot para lanchonetes e usamos a loja Sandurei como
 2. Certifique-se de que você tem o Python instalado em seu sistema.
 3. Execute o arquivo `main.py` para iniciar o chat bot.
 
-## Exemplo de Execução
-![Exemplo de Execução](link-da-imagem.gif)
-
 ## Contribuições
 Contribuições são bem-vindas! Se você quiser contribuir para este projeto, por favor, siga as diretrizes de contribuição e envie um pull request.
 
