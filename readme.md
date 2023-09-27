@@ -5,10 +5,10 @@ Aplicativo de Pedido de Sanduíches
 
 ## Membros do Grupo
 - [Co Facilitador - Alessandro Brito]
-- [Gestor de Conhecimento - Pedro]
+- [Gestor de Conhecimento - Pedro Henrique Silva]
 - [Gestor de Pessoa e Enganjamento - Hernandi de Assis]
-- [Colaborador 1 - Handson Santos]
-- [Colaborador 2 - Marcio]
+- [Colaborador 1 - Handdson Santos]
+- [Colaborador 2 - Márcio Rodrigues]
 
 ## Linguagem Utilizada
 Python
