@@ -24,8 +24,6 @@ valor1 = float(input("Digite o primeiro número: "))
 valor2 = float(input("Digite o segundo número: "))
 valor3 = float(input("Digite o terceiro número: "))
 
-# Chamar a função para encontrar o maior número
 maior = maior_numero(valor1, valor2, valor3)
 
-# Mostrar o maior número
 print(f"O maior número entre os números digitados é {maior}")
