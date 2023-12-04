@@ -86,10 +86,8 @@ VALUES
 ```
 
 
-## Licença
+## CONTACTS
 
-Este projeto é licenciado sob a [Licença MIT](LICENSE).
-
-[![Linkedin Badge](https://img.shields.io/badge/-Alessandro%20Brito-986DFF?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alessandro-brito-220ba6266/)](https://www.linkedin.com/in/alessandro-brito-220ba6266/) 
-[![Gmail Badge](https://img.shields.io/badge/-Alsantosbrito@gmail.com-986DFF?style=flat-square&logo=Gmail&logoColor=white&link=mailto:alsantosbrito@gmail.com)](mailto:alsantosbrito@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Alessandro%20Brito-0077B5?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/alessandrobritoad)](www.linkedin.com/in/alessandrobritoad) 
+[![Gmail Badge](https://img.shields.io/badge/-Alsantosbrito@gmail.com-CC0000?style=flat-square&logo=Gmail&logoColor=white&link=mailto:alsantosbrito@gmail.com)](mailto:alsantosbrito@gmail.com)
 
