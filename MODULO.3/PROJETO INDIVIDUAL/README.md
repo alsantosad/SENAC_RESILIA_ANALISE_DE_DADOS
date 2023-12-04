@@ -1,84 +1,87 @@
-![All Data Brasil](./Fotos/allData_logo_clara.jpeg)
-# All Data Brasil
+# RESILIADATA - Sistema de Banco de Dados
 
-## Sobre a All Data Brasil
+## Descrição do Projeto
 
-A **All Data Brasil** é uma empresa inovadora no campo de análise de dados, com foco no mercado brasileiro. Nossa missão é transformar dados brutos em informações valiosas, capacitando nossos clientes a tomar decisões mais embasadas e aprimorar seus produtos e serviços.
+O projeto RESILIADATA tem como objetivo desenvolver um banco de dados para armazenar informações cruciais a serem utilizadas pelo sistema RESILIADATA. O sistema proporcionará suporte na avaliação das tecnologias adotadas por empresas parceiras e na identificação de seus colaboradores.
 
-## Equipe
-- **Co-facilitador:** Debora Rodrigues
-- **Gestor de Conhecimento:** Beatriz Moura
-- **Gestor de Pessoas e Engajamento:** Alessandro Brito
-- **Colaborador 1:** Pedro Henrique
-- **Colaborador 2:** Luigi Pereira
+### Funcionalidades Principais
 
-Na All Data Brasil, acreditamos no poder dos dados para impulsionar o sucesso. Se você busca melhorar sua compreensão dos dados, otimizar processos de tomada de decisões e aprimorar seus produtos, somos a parceira certa para você.
-#
+1. Cadastro de Empresas Parceiras.
+2. Cadastro de Tecnologias com a opção de selecionar a área (webdev, dados, marketing, etc.).
+3. Registro das tecnologias utilizadas por empresas.
+4. Cadastro de Colaboradores vinculados às empresas parceiras.
 
+## Modelagem e Respostas
 
-![Fundação Getulio Vargas](./Fotos/fgv_logo.jpeg)
-# Parceria de Pesquisa FGV - All Data Brasil
-A **Fundação Getúlio Vargas (FGV)** deseja estabelecer uma parceria com a **All Data Brasil** para realizar uma pesquisa sobre o uso de mídias sociais no Brasil. Esta pesquisa tem como objetivo obter insights valiosos sobre o comportamento dos usuários de redes sociais.
+### 1. Entidades Necessárias:
 
-## Objetivo
+- Empresa Parceira
+- Tecnologia
+- Registro de Tecnologia (Associação entre Empresas e Tecnologias)
+- Colaborador
 
-- Coletar dados sobre o uso de mídias sociais no Brasil.
-- Obter insights sobre o comportamento dos usuários de redes sociais.
+### 2. Principais Campos e Tipos:
 
-## Colaboração
+**Empresa Parceira:**
+- id_empresa_parceira (INT, PK)
+- nome_parceira (VARCHAR(255))
+- endereco (VARCHAR(255))
+- setor (VARCHAR(50))
 
-A FGV solicita o uso do aplicativo da All Data Brasil para a pesquisa e está aberta a discutir detalhes e modalidades de colaboração, incluindo compensações financeiras ou compartilhamento de dados.
+**Tecnologia:**
+- id_tecnologia (INT, PK)
+- nome_tecnologia (VARCHAR(255))
+- area (VARCHAR(50))
 
-Aguardamos sua resposta para explorar esta possível parceria.
+**Registro de Tecnologia:**
+- id_registro_tecnologia (INT, PK)
+- id_empresa_parceira (INT, FK referenciando Empresa Parceira)
+- id_tecnologia (INT, FK referenciando Tecnologia)
+- nivel_utilizacao (INT)
 
-Atenciosamente,
-[Seu Nome]
-FGV
+**Colaborador:**
+- id_colaborador (INT, PK)
+- nome (VARCHAR(255))
+- cargo (VARCHAR(50))
+- id_empresa_parceira (INT, FK referenciando Empresa Parceira)
 
-![PerguntAI](./Fotos/perguntaAI_logo_clara.jpeg)
-## Criação do Aplicativo PerguntAI
+### 3. Relacionamentos:
 
-## Sobre o Aplicativo 'PerguntAI'
+- Relacionamento N:N entre Empresa Parceira e Tecnologia (por meio da tabela Registro de Tecnologia).
+- Relacionamento 1:N entre Empresa Parceira e Colaborador.
 
-O 'PerguntAI' é um aplicativo personalizado, desenvolvido pela All Data Brasil, projetado para atender às necessidades de empresas e corporações que buscam obter insights valiosos por meio de pesquisas de campo e análises de dados. Este aplicativo oferece uma solução completa para simplificar a coleta de informações e transformar dados brutos em visualizações poderosas.
+### 4. Simulação de Registros:
 
+**Empresa Parceira:**
+```sql
+INSERT INTO empresa_parceira (nome_parceira, endereco, setor)
+VALUES 
+('TechSolutions', 'Av. Inovação 123', 'Tecnologia'),
+('DataInsights', 'Rua da Ciência 456', 'Dados');
+```
 
-## Fluxograma do Aplicativo
+**Tecnologia:**
+```sql
+INSERT INTO tecnologia (nome_tecnologia, area)
+VALUES 
+('JavaScript', 'Web Development'),
+('Python', 'Data Science');
+```
 
-![Fluxograma](./Fotos/fluxo.jpg)
+**Registro de Tecnologia:**
+```sql
+INSERT INTO registro_tecnologia (id_empresa_parceira, id_tecnologia, nivel_utilizacao)
+VALUES 
+(1, 1, 4),
+(1, 2, 3),
+(2, 2, 5);
+```
 
+**Colaborador:**
+```sql
+INSERT INTO colaborador (nome, cargo, id_empresa_parceira)
+VALUES 
+('Maria Oliveira', 'Desenvolvedora', 1),
+('José Santos', 'Cientista de Dados', 2);
+```
 
-### Principais Recursos
-
-- **Pesquisas Personalizadas:** Com o 'PerguntAI', você pode criar pesquisas totalmente personalizadas, adaptadas às suas necessidades específicas.
-
-- **Coleta de Respostas Simplificada:** Facilite a coleta de respostas de pesquisa de campo de forma eficiente e organizada.
-
-- **Integração com Visualizadores:** Transforme os dados coletados em visualizações claras e poderosas com ferramentas populares, como Power BI, Excel e outros visualizadores.
-
-- **Decisões Informadas:** Utilize o poder da análise de dados para tomar decisões informadas, aprimorando seus produtos e serviços com base em dados concretos.
-
-- **Simplificação da Pesquisa e Modelagem de Dados:** Simplifique o processo de pesquisa e modelagem de dados, economizando tempo e recursos.
-
-### Como Utilizar
-
-1. Faça o download e instale o 'PerguntAI' em seus dispositivos.
-
-2. Crie pesquisas personalizadas de acordo com seus objetivos de coleta de dados.
-
-3. Colete respostas facilmente com a ajuda do aplicativo.
-
-4. Importe os dados coletados em ferramentas de visualização, como Power BI ou Excel.
-
-5. Utilize as visualizações geradas para tomar decisões informadas e aprimorar seus produtos e serviços.
-
-O 'PerguntAI' é a solução definitiva para simplificar suas pesquisas de campo e análise de dados, fornecendo insights valiosos para o sucesso de sua empresa.
-
-### Licença
-
-Este aplicativo é licenciado pela All Data Brasil. Consulte os termos da licença para obter mais informações sobre seu uso.
-
-Para obter mais detalhes e suporte, visite nosso site em [www.alldatabrasil.com](http://www.alldatabrasil.com).
-
-## Link dos Slides
-[Link dos Slides](http://www.alldatabrasil.com)
