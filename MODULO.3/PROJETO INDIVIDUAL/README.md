@@ -90,13 +90,6 @@ VALUES
 
 Este projeto é licenciado sob a [Licença MIT](LICENSE).
 
+[![Linkedin Badge](https://img.shields.io/badge/-Alessandro%20Brito-986DFF?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alessandro-brito-220ba6266/)](https://www.linkedin.com/in/alessandro-brito-220ba6266/) 
+[![Gmail Badge](https://img.shields.io/badge/-Alsantosbrito@gmail.com-986DFF?style=flat-square&logo=Gmail&logoColor=white&link=mailto:alsantosbrito@gmail.com)](mailto:alsantosbrito@gmail.com)
 
-## Status
-![GitHub Repo Size](https://img.shields.io/github/repo-size/NewKanvas/PI3?style=for-the-badge&logo=github)
-![GitHub last commit](https://img.shields.io/github/last-commit/NewKanvas/PI3?style=for-the-badge&logo=git)
-[![Licence](https://img.shields.io/github/license/NewKanvas/PI3?style=for-the-badge)](./LICENSE)
-![Downloads](https://img.shields.io/github/downloads/NewKanvas/PI3/total?style=for-the-badge)
-![Forks](https://img.shields.io/github/forks/NewKanvas/PI3?style=for-the-badge)
-![Watchers](https://img.shields.io/github/watchers/NewKanvas/PI3?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/NewKanvas/PI3?style=for-the-badge)
-![Issues](https://img.shields.io/github/issues/NewKanvas/PI3?style=for-the-badge)
