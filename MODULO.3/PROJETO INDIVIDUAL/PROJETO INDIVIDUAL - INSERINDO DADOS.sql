@@ -25,13 +25,6 @@ VALUES
 (2, 3),
 (1, 1);
 
-CREATE TABLE colaborador 
-( 
- id_colaborador INT PRIMARY KEY AUTO_INCREMENT,  
- nome VARCHAR(100) NOT NULL,  
- cargo VARCHAR(50) NOT NULL,
- id_empresa_parceiro INT
-);
 
 -- Inserir dados nas tabelas colaborador
 -- nome, cargo, id_empresa_parceiro
