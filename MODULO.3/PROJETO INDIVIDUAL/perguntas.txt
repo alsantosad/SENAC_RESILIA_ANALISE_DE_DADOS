@@ -5,60 +5,96 @@
 
 
 1 - Entidades Necessárias:
-empresa, tecnologia, tecnologia_Empresa, colaborador
+Empresa Parceira, Tecnologia, Registro de Tecnologia, Colaborador
 
 2 - Principais Campos e Tipos:
 
-    Empresa:
-        id_empresa (INT, PK)
-        nome_empresa (VARCHAR(255))
-        endereco (VARCHAR(255))
-        telefone (VARCHAR(20))
+-- CRIANDO A TABELA empresa_parceira
+CREATE TABLE empresa_parceira
+( 
+ id_empresa_parceira INT PRIMARY KEY AUTO_INCREMENT,  
+ nome_empresa VARCHAR(255) NOT NULL,  
+ setor VARCHAR(255) NOT NULL
+);
 
-    Tecnologia:
-        id_tecnologia (INT, PK)
-        area (VARCHAR(50))
-        nome_tecnologia (VARCHAR(255))
+-- CRIANDO A TABELA tecnologia
+CREATE TABLE tecnologia 
+( 
+ id_tecnologia INT PRIMARY KEY AUTO_INCREMENT,  
+ nome_tecnologia VARCHAR(50) NOT NULL,  
+ area VARCHAR(50) NOT NULL
+);
 
-    Tecnologia_Empresa:
-        id_empresa (INT, FK referenciando Empresa)
-        id_tecnologia (INT, FK referenciando Tecnologia)
-        nivel_utilizacao (INT)
+-- CRIANDO A TABELA registro_tecnologia
+CREATE TABLE registro_tecnologia
+( 
+ id_reg_tec INT PRIMARY KEY AUTO_INCREMENT,  
+ id_empresa_parceira INT,  
+ id_tecnologia INT NOT NULL
+); 
 
-    Colaborador:
-        id_colaborador (INT, PK)
-        nome (VARCHAR(255))
-        cargo (VARCHAR(50))
-        id_empresa (INT, FK referenciando Empresa)
+-- CRIANDO A TABELA colaborador
+CREATE TABLE colaborador 
+( 
+ id_colaborador INT PRIMARY KEY AUTO_INCREMENT,  
+ nome VARCHAR(100) NOT NULL,  
+ cargo VARCHAR(50) NOT NULL,
+ id_empresa_parceiro INT
+);
 
 3 -
-    Relacionamento N:N entre Empresa e Colaborador (uma empresa pode ter vários colaboradores).
-    Relacionamento N:N entre Empresa e Tecnologia através da tabela de associação Tecnologia_Empresa 
+    Relacionamento 1:N entre Empresa e Colaborador (uma empresa pode ter vários colaboradores).
+    Relacionamento N:N entre Empresa e Tecnologia através da tabela de associação Registro_Tecnologia
     (uma empresa pode utilizar várias tecnologias, e uma tecnologia pode ser utilizada por várias empresas).
 
 4 - 
--- Inserir dados na tabela empresa
-INSERT INTO empresa(nome_empresa, endereco, telefone) 
+-- Inserir dados nas tabelas empresa_parceira
+-- nome_empresa, setor
+INSERT INTO empresa_parceira(nome_empresa, setor) 
 VALUES 
-('Pepperoni Pizza', '123 Main Street', '555-1234'),
-('Margherita Pizza', '456 Oak Avenue', '555-5678');
+('TechCorp', 'Avenida Inovação 123'),
+('GlobalTech', 'Rua da Tecnologia 456'),
+('DataSolutions', 'Praça da Inovação 789');
 
--- Inserir dados na tabela tecnologias
-INSERT INTO tecnologia(area, nome_tecnologia) 
+-- Inserir dados nas tabelas tecnologia
+-- nome_tecnologia, area
+INSERT INTO tecnologia (nome_tecnologia, area) 
 VALUES 
-('Web Development', 'HTML/CSS'),
-('Data Science', 'Python');
+('Java', 'Desenvolvimento de Software'),
+('React', 'Desenvolvimento Web'),
+('Python', 'Ciência de Dados'),
+('Swift', 'Desenvolvimento de Aplicativos Móveis'),
+('SQL', 'Banco de Dados');
 
--- Inserir dados na tabela colaborador
-INSERT INTO colaborador(nome, cargo, id_empresa) 
-VALUES 
-('John Doe', 'Developer', 1),
-('Jane Smith', 'Data Scientist', 2);
 
--- Inserir dados na tabela tecnologia_empresa
-INSERT INTO tecnologia_empresa(id_empresa, id_tecnologia, nivel_utilizacao) 
+-- Inserir dados nas tabelas registro_tecnologia
+-- id_empresa_parceira, id_tecnologia
+INSERT INTO registro_tecnologia (id_empresa_parceira, id_tecnologia) 
 VALUES 
-(1, 1, 4),
-(1, 2, 3),
-(2, 1, 5),
-(2, 2, 2);
+(1, 2),
+(2, 3),
+(1, 1);
+
+CREATE TABLE colaborador 
+( 
+ id_colaborador INT PRIMARY KEY AUTO_INCREMENT,  
+ nome VARCHAR(100) NOT NULL,  
+ cargo VARCHAR(50) NOT NULL,
+ id_empresa_parceiro INT
+);
+
+-- Inserir dados nas tabelas colaborador
+-- nome, cargo, id_empresa_parceiro
+
+-- Colaborador 1
+INSERT INTO colaborador (nome, cargo, id_empresa_parceira) 
+VALUES 
+('João Silva', 'Desenvolvedor', 1); -- João Silva é um desenvolvedor na empresa PinkMello
+-- Colaborador 2
+INSERT INTO colaborador (nome, cargo, id_empresa_parceira) 
+VALUES 
+('Ana Souza', 'Analista de Dados', 2); -- Ana Souza é uma analista de dados na empresa WebZoom
+-- Colaborador 3
+INSERT INTO colaborador (nome, cargo, id_empresa_parceira) 
+VALUES 
+('Carlos Santos', 'Arquiteto de Software', 1); -- Carlos Santos é um arquiteto de software na empresa PinkMello
