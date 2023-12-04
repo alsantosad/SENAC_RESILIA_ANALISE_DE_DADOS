@@ -85,3 +85,18 @@ VALUES
 ('José Santos', 'Cientista de Dados', 2);
 ```
 
+
+## Licença
+
+Este projeto é licenciado sob a [Licença MIT](LICENSE).
+
+
+## Status
+![GitHub Repo Size](https://img.shields.io/github/repo-size/NewKanvas/PI3?style=for-the-badge&logo=github)
+![GitHub last commit](https://img.shields.io/github/last-commit/NewKanvas/PI3?style=for-the-badge&logo=git)
+[![Licence](https://img.shields.io/github/license/NewKanvas/PI3?style=for-the-badge)](./LICENSE)
+![Downloads](https://img.shields.io/github/downloads/NewKanvas/PI3/total?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/NewKanvas/PI3?style=for-the-badge)
+![Watchers](https://img.shields.io/github/watchers/NewKanvas/PI3?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/NewKanvas/PI3?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/NewKanvas/PI3?style=for-the-badge)
