@@ -1,0 +1,10 @@
+## Como Executar
+
+1. Clone o repositório para a sua máquina.
+2. Execute os scripts SQL na seguinte ordem:
+
+   - `RESILIADATA.sql`
+   - `TRIGGER.sql`
+   - `INSERT.sql`
+   - `SELECT`.sql(Opcional)
+   - `VIEW`.sql

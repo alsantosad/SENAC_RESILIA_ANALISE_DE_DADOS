@@ -1,0 +1,3 @@
+C:/xampp
+Nesse endereço crie uma pasta com o nome de " csv ":
+Depois pode por  todos os CSV da nossa pasta la.
